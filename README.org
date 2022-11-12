@@ -20,5 +20,4 @@ Links to [[https://arxiv.org/pdf/1806.00195.pdf][long paper]],  [[https://nips20
 [fn:1] Learning a Latent Space of Multitrack Measures, I. Simon and Adam Roberts and Colin Raffel and Jesse Engel and C. Hawthorne and D. Eck, Machine Learning for Creativity and Design, NeurIPS 2018 Workshop, 2018.
 
 * メモ
-tensorflow==1.15.5はPython3.9では動きません。3.7 or 3.6に version downgrade しておいて下さい。
-tensorflowはgoogle/magenta team作成のパッケージを用いるのに使います。今回のimplementationには使ってません。
+Python >= 3.7
