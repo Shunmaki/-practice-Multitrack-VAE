@@ -1,0 +1,24 @@
+This repository contains the code for Multitrack Music VAE implementation in PyTorch.
+Multitrack Music VAE は tensorflowで実装済み。PyTorchで書き直す。
+
+* 目的
+The goal of this project is to implement Multitrack MusicVAE[fn:1] in PyTorch. Although the official implementation is available in Tensorflow, implementing a version in PyTorch serves the following purposes.
+- for practicing
+- for comparing the model with other approaches implemented in PyTorch
+- for better reusability of the model
+
+
+* TO DO
+1. Implement the model in PyTorch, based on the paper and the official Tensorflow implementation.(←担当牧)
+2. Train the model on Yamaha e-Competition dataset. It is a collection of MIDI recordings of piano.(←担当adam)
+3. Train the model on Lakh MIDI dataset. It is a collection of multitrack music.
+
+* 参照
+Links to [[https://arxiv.org/pdf/1806.00195.pdf][long paper]],  [[https://nips2018creativity.github.io/doc/Learning_a_Latent_Space_of_Multitrack_Measures.pdf][short paper]], and [[https://colinraffel.com/posters/neurips2018learning.pdf][presentation poster]]. (link to tensorflow official implementation)
+
+* Footnotes
+[fn:1] Learning a Latent Space of Multitrack Measures, I. Simon and Adam Roberts and Colin Raffel and Jesse Engel and C. Hawthorne and D. Eck, Machine Learning for Creativity and Design, NeurIPS 2018 Workshop, 2018.
+
+* メモ
+tensorflow==1.15.5はPython3.9では動きません。3.7 or 3.6に version downgrade しておいて下さい。
+tensorflowはgoogle/magenta team作成のパッケージを用いるのに使います。今回のimplementationには使ってません。
