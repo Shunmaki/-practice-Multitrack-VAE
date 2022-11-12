@@ -1,22 +1,23 @@
-This repository contains the code for Multitrack Music VAE implementation in PyTorch.
-Multitrack Music VAE は tensorflowで実装済み。PyTorchで書き直す。
+Multitrack Music VAEのPytorchでの実装。
 
 * 目的
-The goal of this project is to implement Multitrack MusicVAE[fn:1] in PyTorch. Although the official implementation is available in Tensorflow, implementing a version in PyTorch serves the following purposes.
-- for practicing
-- for comparing the model with other approaches implemented in PyTorch
-- for better reusability of the model
+このプロジェクトの目的は、Multitrack MusicVAE[fn:1]のPytorchでの実装です。
+Tensorflowでの実装は既に行われていますが、以下の目的のためPytorchで実装し直します。
+- 練習のため
+- Pytorchで実装された他のモデルと比較するため
+- モデル利用の柔軟性を高めるため
 
 
 * TO DO
-1. Implement the model in PyTorch, based on the paper and the official Tensorflow implementation.(←担当牧)
-2. Train the model on Yamaha e-Competition dataset. It is a collection of MIDI recordings of piano.(←担当adam)
-3. Train the model on Lakh MIDI dataset. It is a collection of multitrack music.
+この実装はまだ未完成です。今後以下を行ってゆきます。
+1. Pytorchモデル(decoder)の実装
+2. Yamaha e-Competition datasetでの学習 これはMIDI形式で録音されたデータセットです
+3. Lakh MIDI datasetでの学習  Multitrackを含んだデータセット
 
 * 参照
 Links to [[https://arxiv.org/pdf/1806.00195.pdf][long paper]],  [[https://nips2018creativity.github.io/doc/Learning_a_Latent_Space_of_Multitrack_Measures.pdf][short paper]], and [[https://colinraffel.com/posters/neurips2018learning.pdf][presentation poster]]. (link to tensorflow official implementation)
 
-* Footnotes
+* 参考文献
 [fn:1] Learning a Latent Space of Multitrack Measures, I. Simon and Adam Roberts and Colin Raffel and Jesse Engel and C. Hawthorne and D. Eck, Machine Learning for Creativity and Design, NeurIPS 2018 Workshop, 2018.
 
 * メモ
